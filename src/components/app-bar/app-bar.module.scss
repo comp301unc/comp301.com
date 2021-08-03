@@ -1,0 +1,37 @@
+@use 'src/styles/palette';
+@use 'src/styles/breakpoints';
+
+.color-wrapper {
+  color: palette.$header-text;
+  background-color: palette.$header-background;
+}
+
+.flex-wrapper {
+  max-width: breakpoints.$large;
+  margin: 0 auto;
+  padding: 2em 1em;
+  display: flex;
+  align-items: center;
+}
+
+.content-wrapper {
+  margin-left: 2em;
+  text-align: left;
+
+  h1,
+  h2 {
+    line-height: 1.1em;
+    margin: 0;
+    font-weight: normal;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}

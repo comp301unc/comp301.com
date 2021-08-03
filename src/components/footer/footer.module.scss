@@ -1,0 +1,16 @@
+/**
+ * Footer styles
+ */
+
+@use 'src/styles/palette';
+
+.primary-footer {
+  text-align: center;
+  padding: 2em 1em;
+  color: palette.$footer-text;
+  background-color: palette.$footer-background;
+
+  @media (max-width: 1200px) {
+    min-height: 9em;
+  }
+}
